@@ -1,0 +1,1 @@
+console.log("Quote Card Loaded");
