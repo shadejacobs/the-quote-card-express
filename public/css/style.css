@@ -21,7 +21,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Quote_Card.jpeg'); 
+  background-image: url('../img/Quote_Card.jpeg');
   background-size: cover;
   background-position: center;
   z-index: -1;
