@@ -5,6 +5,10 @@ require("dotenv").config();
 const cors = require("cors");
 
 app.use(cors());
+const corsOptions = {
+    origin: `http://localhost:${port}`
+}
+
 
 async function getRandomImage () {
     const endpoint = `https://api.unsplash.com/photos/random/?client_id=${process.env.CLIENT_ID}`;
@@ -34,4 +38,4 @@ app.listen(PORT, () => {
 
 require("dotenv").config();
 
-app.use(cors());
+app.use(cors(corsOptions));
